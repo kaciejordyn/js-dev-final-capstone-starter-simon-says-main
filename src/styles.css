@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  color: yellow;
+  color: orange;
   font-family: 'Rubik Microbe', sans-serif;
   display: flex;
   justify-content: center;
@@ -20,7 +20,7 @@ body {
 }
 
 main {
-  background-color: #000;
+  background-color: #3b3333;
   padding: 40px;
 }
 
@@ -29,33 +29,40 @@ h1 {
   font-size: 40px;
 }
 
+h2 {
+  font-family: Verdana,  sans-serif;
+  text-align: center;
+  font-size: 20px;
+}
+
 .game-controls {
   text-align: center;
 }
 
 .start-button {
   display: inline-block;
-  height: 38px;
-  padding: 0 30px;
-  color: yellow;
+  height: 60px;
+  padding: 0 45px;
+  color: orange;
   text-align: center;
-  font-size: 14px;
+  font-size: 25px;
   font-weight: 600;
   text-transform: uppercase;
   background-color: transparent;
-  border: 1px solid yellow;
+  border: 1px solid orange;
   cursor: pointer;
+  justify-self: center;
+  border-radius: 5%;
 }
 
 .start-button:hover {
   color: greenyellow;
-  font-size: 18px;
+  font-size: 30px;
   border-color: greenyellow;
-  transform: rotate(5deg);
 }
 
 .status {
-  font-size: 22px;
+  font-size: 25px;
 }
 
 .pad-container {
@@ -74,7 +81,7 @@ h1 {
 .pad-red:hover,
 .pad-red:focus {
   background-color: #ff451a;
-  transform: rotate(-5deg);
+  transform: translateY(-5px);
 }
 
 .pad-red:active,
@@ -91,7 +98,7 @@ h1 {
 .pad-green:hover,
 .pad-green:focus {
   background-color: #8cc218;
-  transform: rotate(5deg);
+  transform: translateY(-5px);
 }
 
 .pad-green:active,
@@ -108,13 +115,13 @@ h1 {
 .pad-yellow:hover,
 .pad-yellow:focus {
   background-color: #ffb900;
-  transform: rotate(5deg);
+  transform: translateY(5px);
 }
 
 .pad-yellow:active,
 .pad-yellow.activated {
   background-color: #ffca3d;
-  transform: translateY(10px);
+  transform: translateY(-10px);
 }
 
 .pad-blue {
@@ -125,13 +132,13 @@ h1 {
 .pad-blue:hover,
 .pad-blue:focus {
   background-color: #139ddd;
-  transform: rotate(5deg);
+  transform: translateY(5px);
 }
 
 .pad-blue:active,
 .pad-blue.activated {
   background-color: #2bbcff;
-  transform: translateY(10px);
+  transform: translateY(-10px);
 }
 
 .hidden {
@@ -140,4 +147,8 @@ h1 {
 
 .unclickable {
   pointer-events: none;
+}
+
+span {
+  font-family: Verdana,  sans-serif;
 }
